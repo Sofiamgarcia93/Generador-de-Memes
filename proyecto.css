@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+/*VARIABLES MODO CALRO Y MODO OSCURO*/
+  body.modoClaro{
+    --colorFondo: rgb(178, 181, 185);
+    --color:  rgb(52, 63, 62);
+    --fondoMain: rgb(220, 237, 255);
+    --colorHeader: rgb(221, 223, 226);
+    --colorPanel: rgb(34, 36, 39);
+    --generalFont: "Open Sans", sans-serif;;
+    --letra:16px;
+    --letraTitulo: 36px;
+    --tamanioTitulo: 300;
+    
+}
+
+body.modoOscuro{
+   --colorFondo: rgb(52, 63, 62) ;
+    --color: rgb(220, 237, 255);
+    --fondoMain: rgb(18, 22, 22);
+    --colorHeader: rgb(80, 90, 91);
+    --colorPanel:rgb(52, 63, 62);
+    --generalFont: "Open Sans", sans-serif;
+    --letra: 16px;
+    --letraTitulo: 36px;
+    --tamanioTitulo: 300;
+}
+
+
+body {
+  background-color: var(--colorFondo);
+  color: var(--color);
+  
+}
+
+    
+      
+header{
+  background-color: var(--colorHeader);
+  text-align: center;
+  height:auto;
+  width: auto;
+
+}
+
+ /*ESTILOS DEL TITULO*/
+ h1{
+  color: var(--colorLetra);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: var(--tamanioTitulo);
+  font-size: var(--letraTitulo);
+  text-align: center;
+  padding-top: 10px;
+  }
+
+/*ESTILOS BOTONES DE TEXTO IMG Y MODO OSC/CLARO*/
+.botonsContainer{
+  /*box-sizing:border-box;
+  color: rgb(66, 66, 66);
+  display:flex;
+  flex-wrap: wrap;
+  font-family: "Open Sans", sans-serif;
+  justify-content: center;
+  margin-bottom: 5px;*/
+  text-align: center;
+  padding: 10px;
+ 
+ 
+}
+
+.sinContorno{
+  font-family: 'Sintony', sans-serif;
+  border: 0;
+  outline: none;
+  padding: 0 10px 0 10px;
+  margin: 5px;
+  height: 30px;
+  background-color: var(--colorHeader);
+  color: var(--color);
+  font-size: 20px;
+  }
+
+  /*HOVER DE BOTONES DEL HEADER*/
+
+  .sinContorno:hover{
+    background-color: var(--colorFondo);
+    transition: 0.5s;
+    border-radius: 5px;
+  }
+
+ 
+
+p{
+  color: var(--colorLetra);
+  font-size: var(--letra);
+  font-family: 'Open Sans', sans-serif;
+  }
+
+  
+  main{
+    background-color: var(--colorFondo);
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  /*ESTILOS DEL CONTEINER DEL MEME */
+  .meme-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--fondoMain);
+    padding: 0 20px;
+  
+   
+  }
+  
+  .meme-text {
+    font-family: Impact;
+    font-size: 40px;
+    background-color: white;
+    width: 610px;
+    height: 70px;
+    text-align: center;
+    padding: 17px 0 0 0;
+    color: rgb(52, 63, 62);
+  }
+  
+  .meme-img {
+    background-color: black;
+    width: 610px;
+    height: 470px;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+    background-position-y: center;
+    
+    
+  }
+  
+/*BOTON DE DESCARGAR MEME*/
+
+.botonDescargar{
+  font-family: 'Sintony', sans-serif;
+  background-color: rgb(8, 165, 60);
+  color: white;
+  border: 0 ;
+  border-radius: 5px;
+  width: 160px;
+  height: 50px;
+  margin: 20px;
+}
+
+/*ESTILOS DEL ASIDE*/
+
+  .panelAside{
+    background-color: var(--colorPanel);/*aplicacion de variable*/
+    position: fixed;
+    top: 0px;
+    right: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    font-family: 'Sintony', sans-serif;
+    padding-top: 15px  0 0 15px ;
+    overflow: scroll;/*scroll panel texto*/
+  }
+
+  /*titulo de panel img y text*/
+  .tituloSection{
+    text-align: center;
+}
+  .tituloPropiedades{
+    font-size: 16px;
+    padding: 15px 0 5px 0;
+}
+  .cerrarPanel{
+    position: fixed;
+    top: 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: var(--colorPanel);
+    color: var(--color);
+    font-size: 20px;
+    justify-content: right;
+    
+  }
+  
+  .ocultar {
+    visibility: hidden;
+  }
+  
+
+
+
