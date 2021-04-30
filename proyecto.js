@@ -62,20 +62,18 @@ const panel = document.querySelector("#panel");
         })
 
 //ELEMENTOS DE PANELES
-  const panel = document.querySelector(".panelAside");
-  const panelImg = document.querySelector(".panel-img");
-  const panelText = document.querySelector(".panel-text");
+  const panel = document.getElementById("panelAside");
+  const panelImg = document.getElementById("panelImg");
+  const panelText = document.getElementById("panelText");
 
 //ELEMENTOS DEL BOTON CLOSE TEXT E IMG
   const buttonClose = document.querySelector("#buttonClose");
-  const buttonImg = document.querySelector(".button-img");
-  const buttonText = document.querySelector(".button-text");
+  const buttonImg = document.querySelector("#button-img");
+  const buttonText = document.querySelector("#button-text");
 
 
 //EVENTO PARA CERRAR Y ABRIR LOS PANELES
-  buttonClose.addEventListener("click",()=>{
-          panel.classList.add("ocultar");
-        });
+ 
   buttonText.addEventListener("click",()=>{
           panel.classList.remove("ocultar");
           panelImg.classList.add("ocultar");
@@ -87,6 +85,10 @@ const panel = document.querySelector("#panel");
           panelText.classList.add("ocultar");
           panelImg.classList.remove("ocultar");
         })
+
+  buttonClose.addEventListener("click",()=>{
+          panel.classList.add("ocultar");
+        });
 
 //ELEMENTOS DEL TOP TITLE
   const topTitle = document.querySelector(".meme-text");
