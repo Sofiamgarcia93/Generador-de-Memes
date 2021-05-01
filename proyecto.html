@@ -12,7 +12,7 @@
     crossorigin="anonymous"/>
     <link rel="stylesheet" href="./proyecto.css">
 </head>
-<!-- el body tiene definida una clase para hacer cambio a claro y oscuro-->
+<!-- el body tiene una clase para hacer cambio a claro y oscuro-->
 <body class="modoClaro">
     <header>
 
@@ -26,7 +26,7 @@
 
    </header>
 
-   <main  class="meme-container">
+   <main>
 
     <div class="recuadroMeme">
 
@@ -66,7 +66,8 @@
                 <h3 class="tituloPropiedades">FONDO</h3>
                    
                 <div class="ajustesFondo">
-                    <div class="panelFondoImg">
+
+                    <div class="propiedadFondoImg">
                         <input type="color" name="" id="colorFondoDiv">
                         <span id="nombreColorFondoDiv">#FFFFF</span>
                     </div>
@@ -87,49 +88,50 @@
                 </div>
                 <!--******FILTROS***********-->
                 <h3 class="tituloPropiedades">FILTROS</h3>
-                <div>
+                
+                <div class="cajaDeFiltros">
                     <label for="brillo">Brillo</label>
                     <input type="range" name="" id="brillo" class="puntoBarra">          
-                </div>
+                
 
-                <div>
+              
                     <label for="opacidad">Opacidad</label>
                     <input type="range" name="" id="opacidad" class="puntoBarra">
-                </div>
+               
 
-                <div>
+                
                     <label for="contraste">Contraste</label>
                     <input type="range" name="" id="contraste" class="puntoBarra">
-                </div>
+                
 
-                <div>
+                
                     <label for="desenfoque">Desenfoque</label>
                     <input type="range" name="" id="desenfoque" class="puntoBarra">          
-                </div>
+                
 
-                <div>
+              
                     <label for="escala">Escala de Grises</label>
                     <input type="range" name="" id="escala" class="puntoBarra">          
-                </div>
-                <div>
+                
+                
                     <label for="sepia">Sepia</label>
                      <input type="range" name="" id="sepia"class="puntoBarra">
-                </div>
+                
 
-                <div>
+                
                     <label for="hue">Hue</label>
                     <input type="range" name="" id="hue" class="puntoBarra">          
-                </div>
+                
 
-                <div>
+                
                     <label for="saturado">Saturado</label>
                     <input type="range" name="" id="saturado" class="puntoBarra">
-                </div>
+                
 
-                <div>
+                
                     <label for="negativo">Negativo</label>
                     <input type="range" name="" id="negativo" class="puntoBarra">
-                </div>
+            </div>
 
                 <button class="restablecer">Restablecer Filtros</button>
 

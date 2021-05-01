@@ -98,11 +98,48 @@ const panel = document.querySelector("#panel");
   
 //EVENTO DE INPUT TOP      
    topText.addEventListener("input", () =>{
-       topTitle.textContent = topText.value;
+       topTitle.innerText = topText.value;
         });
 
 //EVENTO DE INPUT  BOTTOM     
 bottomText.addEventListener("input", () =>{
-  bottomTitle.textContent = bottomText.value;
+  bottomTitle.innerText = bottomText.value;
    });
 
+//ELEMENTOS PARA OCULTAR TEXTO ARRIBA
+
+const checkboxSup = document.getElementById ("checkTopTex");
+
+//EVENTO PARA OCULTAR TEXTO DE ARRIBA
+
+
+checkboxSup.addEventListener('change',() =>{
+  if(checkboxSup.checked){
+topTitle.classList.add("ocultar");
+topText.disabled = true;
+  }else{
+    topTitle.classList.remove("ocultar");
+    topText.disabled = false;
+  }
+  
+})
+
+
+//ELEMENTOS PARA OCULTAR TEXTO ABAJO
+
+const checkboxInferior = document.getElementById ("checkBottomTex");
+
+//EVENTO PARA OCULTAR TEXTO DE ABAJO
+
+
+checkboxInferior.addEventListener('change',() =>{
+  
+  if(checkboxInferior.checked){
+    bottomTitle.classList.add("ocultar");
+    bottomText.disabled = true;
+      }else{
+        bottomTitle.classList.remove("ocultar");
+        bottomText.disabled = false;
+      }
+      
+    })
