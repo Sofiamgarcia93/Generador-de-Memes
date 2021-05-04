@@ -1,48 +1,7 @@
-
-/*
-
-const panel = document.querySelector("#panel");
-      const buttonClose = document.querySelector("#button-close");
-
-      //cuando hago click en boton de cerra se cierra el panel(aside completo)
-      //agregar la clase ocular
-      
-      buttonClose.addEventListener("click",()=>{
-        panel.classList.add("ocultar");
-      });
-const panel = document.querySelector("#panel");
-      const panelImg = document.querySelector("#panel-img");
-      const panelText = document.querySelector("#panel-text");
-
-      const buttonClose = document.querySelector("#button-close");
-      const buttonImg = document.querySelector("#button-img");
-      const buttonText = document.querySelector("#button-text");
-
-
-   
-
-
-    
-
-
-     
-
-      //cuando hago click en boton de cerra se cierra el panel(aside completo)
-      //agregar la clase ocular
-
-      buttonClose.addEventListener('click', () => {
-        panel.classList.add('ocultar');
-      });
-
-      // cuando hago click en el boton de imagen o en el boton texto debe verse el panel
-      // quitar la clase ocular
-
-      // cuando click al boton text abrir el panel,se ve la section de texto
-      // y se oculta la imagen
-      // se ve img y texto
-      // se ve img
-      //
-    */
+'use strict'
+//************************************************** */
+//***************FUNCIONALIDADES DEL HEADER */
+//************************************************* */
 
 
   //ELEMENTOS DE BOTON CLARO OSCURO 
@@ -89,6 +48,47 @@ const panel = document.querySelector("#panel");
   buttonClose.addEventListener("click",()=>{
           panel.classList.add("ocultar");
         });
+
+
+//***************************** */
+//BOTON DESCARGAR IMAGEN
+///****************************************
+
+
+
+const descarga = document.querySelector(".botonDescargar");
+const imgMeme  = document.querySelector(".recuadroMeme");
+
+
+descarga.addEventListener("click", () => {
+  domtoimage.toBlob(document.querySelector(".recuadroMeme")).then(function(blob) {
+    window.saveAs(blob, "meme.png");
+  });
+});
+
+//************************************* */
+//************************************* */
+//FUNCIONALIDADES DEL PANEL DE IMAGEN
+//*************************************** */
+//************************************* */
+
+
+
+
+
+
+
+
+
+
+
+
+//************************************* */
+//************************************* */
+//FUNCIONALIDADES DEL PANEL DE TEXTO
+//*************************************** */
+//************************************* */
+
 
 //ELEMENTOS DEL TOP TITLE
   const topTitle = document.querySelector(".meme-text");
@@ -156,18 +156,15 @@ checkboxInferior.addEventListener('change',() =>{
     })
 
 
-    //CAMBIAR TAMAÑO DE FUENTE NO ME FUNCIONA**********************
-    //***************************
-     //***************************
-      //***************************
-       //***************************
-
+    //CAMBIAR TAMAÑO DE FUENTE 
 
     const tamanioFuente = document.getElementById('tamanioFuente');
-
+    
+    
     tamanioFuente.addEventListener('input', () =>{
-      bottomTitle.style.fontSize = tamanioFuente.value;
-      bottomTitle.style.fontSize = tamanioFuente.value;
+      const selectTamanioFuente = tamanioFuente.value;
+      topTitle.style.fontSize = `${selectTamanioFuente}px`;
+      bottomTitle.style.fontSize =`${selectTamanioFuente}px`;
     })
 
     //ALINEACION FUENTE
@@ -260,26 +257,22 @@ checkboxInferior.addEventListener('change',() =>{
 
 
 
-    //ESPACIADO NO ME SALEEEEEEEEEEEEEEEEE
-    //********************
-    //********************
-    //********************
-    //********************
-    //************************ */ */
-    //********************
+    //ESPACIADO 
     const espaciado = document.getElementById('espaciado');
 
     espaciado.addEventListener('input', () =>{
-      topTitle.style.paddingTop = espaciado.value;
+      valorDeEspaciado = espaciado.value;
+      topTitle.style.padding = `${valorDeEspaciado}px`;
+      bottomTitle.style.padding = `${valorDeEspaciado}px`;
     })
 
 
-    //INTERLINEADO NI IDEA COMO HACERLO
-    //********************
-    //********************
-    //********************
-    //********************
-    //************************ */ */
-    //********************
+    //INTERLINEADO 
     const interlineado = document.getElementById('interlineado');
+
+    interlineado.addEventListener('input', ()=>{
+      valorInterlineado = interlineado.value;
+      topTitle.style.lineHeight = `${valorInterlineado}`;
+      bottomTitle.style.lineHeight = `${valorInterlineado}`;
+    })
 
