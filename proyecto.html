@@ -77,7 +77,7 @@
 
                     <div class="lumiFondo">
 
-                        <select aria-label="Modo de mezcla de fondo de imagen" id="blend-mode-select" class="panel-control-input">
+                        <select aria-label="Modo de mezcla de fondo de imagen" id="tipoDeFondo" class="panel-control-input">
                             <option value="unset">Ninguno</option>
                             <option value="lighten">Aclarar</option>
                             <option value="darken">Oscurecer</option>
@@ -90,54 +90,50 @@
 
                 </div>
                 <!--******FILTROS***********-->
-                <h3 class="tituloPropiedades">FILTROS</h3>
-                
-                <div class="cajaDeFiltros">
-                    <label for="brillo">Brillo</label>
-                    <input type="range" name="" id="brillo" class="puntoBarra">          
-                
-
-              
-                    <label for="opacidad">Opacidad</label>
-                    <input type="range" name="" id="opacidad" class="puntoBarra">
-               
-
-                
-                    <label for="contraste">Contraste</label>
-                    <input type="range" name="" id="contraste" class="puntoBarra">
-                
-
-                
-                    <label for="desenfoque">Desenfoque</label>
-                    <input type="range" name="" id="desenfoque" class="puntoBarra">          
-                
-
-              
-                    <label for="escala">Escala de Grises</label>
-                    <input type="range" name="" id="escala" class="puntoBarra">          
                 
                 
-                    <label for="sepia">Sepia</label>
-                     <input type="range" name="" id="sepia"class="puntoBarra">
-                
-
-                
-                    <label for="hue">Hue</label>
-                    <input type="range" name="" id="hue" class="puntoBarra">          
-                
-
-                
-                    <label for="saturado">Saturado</label>
-                    <input type="range" name="" id="saturado" class="puntoBarra">
-                
-
-                
-                    <label for="negativo">Negativo</label>
-                    <input type="range" name="" id="negativo" class="puntoBarra">
-            </div>
-
-                <button class="restablecer">Restablecer Filtros</button>
-
+                <div class="filtros-img column">
+                    <h3 class="tituloPropiedades">FILTROS</h3>
+                    <div class="column">
+                      <label for="brillo">BRILLO</label>
+                      <input type="range" name="brillo" id="brillo" min="0" max="1" value="1" step="0.1" />
+                    </div>
+                    <div class="column">
+                      <label for="opacidad">OPACIDAD</label>
+                      <input type="range" name="opacidad" id="opacidad" min="0" max="1" value="1" step="0.1" />
+                    </div>
+                    <div class="column">
+                      <label for="contraste">CONTRASTE</label>
+                      <input type="range" name="contraste" id="contraste" min="100" max="1000" value="100" />
+                    </div>
+                    <div class="column">
+                      <label for="desenfoque">DESENFOQUE</label>
+                      <input type="range" name="desenfoque" id="desenfoque" min="0" max="10" value="0" step="0.1" />
+                    </div>
+                    <div class="column">
+                      <label for="escala">ESCALA DE GRISES</label>
+                      <input type="range" name="escala" id="grises" min="0" max="100" value="0" />
+                    </div>
+                    <div class="column">
+                      <label for="sepia">SEPIA</label>
+                      <input type="range" name="sepia" id="sepia" min="0" max="100" value="0" />
+                    </div>
+                    <div class="column">
+                      <label for="hue">HUE</label>
+                      <input type="range" name="hue" id="hue" min="0" max="360" value="0" />
+                    </div>
+                    <div class="column">
+                      <label for="saturado">SATURADO</label>
+                      <input type="range" name="saturado" id="saturado" min="100" max="1000" value="100" step="10" />
+                    </div>
+                    <div class="column">
+                      <label for="negativo">NEGATIVO</label>
+                      <input type="range" name="negativo" id="negativo" min="0" max="1" value="0" step="0.1" />
+                    </div>
+                  </div>
+                 
+                  <button id="btn-reestablecer">Reestablecer filtros</button>
+                 
         </section>
 
         <!--

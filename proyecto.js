@@ -72,13 +72,92 @@ descarga.addEventListener("click", () => {
 //*************************************** */
 //************************************* */
 
+//CAMBIAR IMAGEN CON URL
+
+const imagenMeme = document.querySelector("#colorFondoImg");
+const inputurl = document.querySelector("#url-img-input");
+
+inputurl.addEventListener("change", () => {
+  imagenMeme.style.backgroundImage = `url("${inputurl.value}")`;
+});
+
+
+
+//CAMBIAR FONDO 
+const color = document.getElementById("colorFondoDiv");
+  function cambiarcolor( ){
+ 
+   document.getElementById("colorFondoImg").style.backgroundColor =`${color.value}`;
+}
+
+color.addEventListener('input', cambiarcolor)
+
+
+//
+
+
+
+////---- Tipos de fondo  ---// REVISAR PORQUE NO ANDAN TODOS
+const tipoDeFondo = document.querySelector("#tipoDeFondo");
+
+tipoDeFondo.addEventListener("input", () => {
+  imagenMeme.style.backgroundBlendMode = tipoDeFondo.value;
+});
 
 
 
 
+// FILTROS
+/*
+const actualizarFiltros = (e) => {
+  console.log(e.target.value); 
+divcolor.style.filter = brightness(${brillo.value}) opacity(${opacidad.value}) contrast(${contraste.value}%) blur(${desenfoque.value}px) grayscale(${grises.value}%) sepia(${sepia.value}) hue-rotate(${hue.value}deg) saturate(${saturado.value}%) invert(${negativo.value});
+}
+*/
 
+/////FILTROS DE IMAGEN/*
+/*
+const brillo = document.getElementById("brillo");
+const opacidad = document.getElementById("opacidad");
+const contraste = document.getElementById("contraste");
+const desenfoque = document.getElementById("desenfoque");
+const grises = document.getElementById("grises");
+const sepia = document.getElementById("sepia");
+const hue = document.getElementById("hue");
+const saturado = document.getElementById("saturado");
+const negativo = document.getElementById("negativo");
 
+const addFiltros = () =>{
+    imgMeme.style.filter = `brightness(${brillo.value}) 
+    opacity(${opacidad.value}) contrast(${contraste.value}%) 
+    blur(${desenfoque.value}px) grayscale(${grises.value}%) 
+    sepia(${sepia.value}%) hue-rotate(${hue.value}deg) 
+    saturate(${saturado.value}%) invert(${negativo.value})`;
+};
 
+brillo.addEventListener("change", addFiltros);
+opacidad.addEventListener("change", addFiltros);
+contraste.addEventListener("change", addFiltros);
+desenfoque.addEventListener("change", addFiltros);
+grises.addEventListener("change", addFiltros);
+sepia.addEventListener("change", addFiltros);
+hue.addEventListener("change", addFiltros);
+saturado.addEventListener("change", addFiltros);
+negativo.addEventListener("change", addFiltros);
+
+//REESTABLECER FILTROS
+const botonReestablecer = document.getElementById("btn-reestablecer");
+const resetFiltros = () =>{
+    brillo.value = 1; opacidad.value = 1; contraste.value = 100;
+    desenfoque.value = 0; grises.value = 0; sepia.value = 0;
+    hue.value = 0; saturado.value = 100; negativo.value = 0;
+};
+
+botonReestablecer.addEventListener("click", () =>{
+    imgMeme.style.filter = "none";
+    resetFiltros();
+});
+*/
 
 
 
