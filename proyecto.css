@@ -7,10 +7,10 @@
 /*VARIABLES MODO CALRO Y MODO OSCURO*/
   body.modoClaro{
     --colorFondo: rgb(178, 181, 185);
-    --color:  rgb(52, 63, 62);
+    --color:  rgb(204, 196, 196);
     --fondoMain: rgb(220, 237, 255);
     --colorHeader: rgb(221, 223, 226);
-    --colorPanel: rgb(34, 36, 39);
+    --colorPanel: rgb(118, 120, 124);
     --generalFont: "Open Sans", sans-serif;;
     --letra:16px;
     --letraTitulo: 36px;
@@ -20,7 +20,7 @@
 
 body.modoOscuro{
    --colorFondo: rgb(52, 63, 62) ;
-    --color: rgb(220, 237, 255);
+    --color: rgb(101, 103, 104);
     --fondoMain: rgb(18, 22, 22);
     --colorHeader: rgb(80, 90, 91);
     --colorPanel:rgb(52, 63, 62);
@@ -118,9 +118,9 @@ p{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 40vh;
-    height: 40vh;
-    padding-top: 30px;
+    width: 50vh;
+    height: 50vh;
+    padding-top: 70px;
    
   }
 
@@ -210,106 +210,123 @@ p{
     
     
   }
-  input[type=color]{  
-  appearance: none;
-}
-/*estilos de la barra de los filtros de img*/
-  input[type=range]{  
-    margin-top: 5px;   
-    width: 100%;
-    background-color: rgb(187, 193, 216);
-    border-radius: 10px;
-    appearance: none;
-    height: 6px;    
-}
-/*ESTILOS DE LA BOLITA DE LOS FILTROS DE IMG*/
-input[type=range]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  border: 1px solid rgb(0, 0, 0);
-  height: 16px;
-  width: 16px;
-  border-radius: 25px;
-  background: rgb(236, 234, 234);
-  cursor: pointer;
-}
-/*
-
-  .colorInputYButton{
-    border: none;
-    background-color: var(--colorHeader);
-  }
-*/
-    .ajustesFondo{
-      display: flex;
-      justify-content: space-evenly;
-    }
-
-  .panelFondoImg{
-    border: 0;
-    color: var(--color);
-    font-family: var(--generalFont);
-    background-color: transparent;
-    outline: 0;
-    display: block;
-    width: 50%;
-  }
-
-
-  .lumiFondo{
-    width: 50%;
-  }
-
-
-  .panel-control-input {
-    width: 100%;
-    height: 36px;
-    background-color: var(--colorHeader);
-    border-radius: var(--colorFondo);
-    transition: background-color 0.2s;
-    padding: 5px 10px;
-    margin-bottom: 5px;
-}
-
-
-
-
-
+ 
 /*
 *************************************
 ESTILOS DEL PANEL IMAGEN
 
 *************************************
 */
+#panelImg{
+  padding-left: 20px;
+  padding-right: 10px;
+}
 
-.cajaDeFiltros{
-  display: flex;
-  flex-direction: column;
+#url-img-input{
+  width: 100%;
 }
 
 .ajustesFondo{
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
+  width: 100%;
+  border: 0;
+  font-family: var(--generalFont);
+  background-color: transparent;
+  outline: 0;
+  
 }
+
 .propiedadFondoImg{
-  background-color: var(--colorFondo);
-  font-family: var(--letra);
   border: 1px solid ;
   border-radius: 5%;
-  font-size: 10px;
+  font-size: 16px;
   padding: 3px 3px;
-  display: flex;
-  flex-direction: row;
-
+  width: 50%;
 }
 
-input[type='color']::-webkit-color-swatch{
+#nombreColorFondoDiv{
+  font-size: 0.875rem;
+  color: white;
+  z-index: -1;
   
+}
+
+.lumiFondo{
+  width: 50%;
+}
+#tipoDeFondo{
+  width: 100%;
+}
+/*ESTILOS DE LA BOLITA DEL COLOR DE FONDO*/
+input[type="color"] {
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  border: 0;
   border-radius: 50%;
-  cursor: pointer;
+  padding: 0;
+  margin-top: 5px;
+  overflow: hidden;
+  box-shadow: 2px 2px 5px (0, 0, 0, 0.1);
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+
+}
+input[type="color"]::-webkit-color-swatch {
   border: none;
 }
+
+
+/*estilos de la barra de los filtros de img*/
+input[type=range]{  
+  margin-top: 5px;   
+  width: 100%;
+  background-color: rgb(187, 193, 216);
+  border-radius: 10px;
+  appearance: none;
+  height: 6px;    
+}
+/*ESTILOS DE LA BOLITA DE LOS FILTROS DE IMG*/
+input[type=range]::-webkit-slider-thumb {
+-webkit-appearance: none;
+border: 1px solid rgb(0, 0, 0);
+height: 16px;
+width: 16px;
+border-radius: 25px;
+background: rgb(236, 234, 234);
+cursor: pointer;
+}
+ 
+
+
+
+
+.panel-control-input {
+  height: 36px;
+  background-color: var(--color);
+  border: none;
+  box-shadow: 2px 2px 5px (0, 0, 0, 0.1);
+  transition: background-color 0.2s;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+
+.btn-reestablecer{
+  color: white;
+  height: 46px;
+  width: 120px;
+  background-color: var(--color);
+  border: none;
+  box-shadow: 2px 2px 5px (0, 0, 0, 0.1);
+  transition: background-color 0.2s;
+  margin-right: 10px;
+  margin-top: 15px;
+  margin-left: 120px;
+}
+
 
 
 /*

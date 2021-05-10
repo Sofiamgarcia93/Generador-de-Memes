@@ -70,7 +70,7 @@
                    
                 <div class="ajustesFondo">
 
-                    <div class="propiedadFondoImg">
+                    <div class=" propiedadFondoImg panel-control-input">
                         <input type="color" name="" id="colorFondoDiv">
                         <span id="nombreColorFondoDiv">#FFFFF</span>
                     </div>
@@ -96,11 +96,11 @@
                     <h3 class="tituloPropiedades">FILTROS</h3>
                     <div class="column">
                       <label for="brillo">BRILLO</label>
-                      <input type="range" name="brillo" id="brillo" min="0" max="1" value="1" step="0.1" />
+                      <input type="range" name="brillo" id="brillo" min="0" max="1" value="0.5" step="0.1" />
                     </div>
                     <div class="column">
                       <label for="opacidad">OPACIDAD</label>
-                      <input type="range" name="opacidad" id="opacidad" min="0" max="1" value="1" step="0.1" />
+                      <input type="range" name="opacidad" id="opacidad" min="0" max="1" value="0.5" step="0.1" />
                     </div>
                     <div class="column">
                       <label for="contraste">CONTRASTE</label>
@@ -126,13 +126,13 @@
                       <label for="saturado">SATURADO</label>
                       <input type="range" name="saturado" id="saturado" min="100" max="1000" value="100" step="10" />
                     </div>
-                    <div class="column">
+                    <div>
                       <label for="negativo">NEGATIVO</label>
                       <input type="range" name="negativo" id="negativo" min="0" max="1" value="0" step="0.1" />
                     </div>
                   </div>
                  
-                  <button id="btn-reestablecer">Reestablecer filtros</button>
+                  <button class="btn-reestablecer" id="btn-reestablecer">Reestablecer filtros</button>
                  
         </section>
 

@@ -60,11 +60,13 @@ const descarga = document.querySelector(".botonDescargar");
 const imgMeme  = document.querySelector(".recuadroMeme");
 
 
-descarga.addEventListener("click", () => {
-  domtoimage.toBlob(document.querySelector(".recuadroMeme")).then(function(blob) {
-    window.saveAs(blob, "meme.png");
-  });
+descarga.addEventListener("click", () =>{
+  domtoimage.toBlob(imgMeme)
+      .then(function (blob) {
+      window.saveAs(blob, 'meme.png');
+    });
 });
+
 
 //************************************* */
 //************************************* */
@@ -108,15 +110,10 @@ tipoDeFondo.addEventListener("input", () => {
 
 
 // FILTROS
-/*
-const actualizarFiltros = (e) => {
-  console.log(e.target.value); 
-divcolor.style.filter = brightness(${brillo.value}) opacity(${opacidad.value}) contrast(${contraste.value}%) blur(${desenfoque.value}px) grayscale(${grises.value}%) sepia(${sepia.value}) hue-rotate(${hue.value}deg) saturate(${saturado.value}%) invert(${negativo.value});
-}
-*/
+
 
 /////FILTROS DE IMAGEN/*
-/*
+
 const brillo = document.getElementById("brillo");
 const opacidad = document.getElementById("opacidad");
 const contraste = document.getElementById("contraste");
@@ -128,7 +125,7 @@ const saturado = document.getElementById("saturado");
 const negativo = document.getElementById("negativo");
 
 const addFiltros = () =>{
-    imgMeme.style.filter = `brightness(${brillo.value}) 
+    imagenMeme.style.filter = `brightness(${brillo.value}) 
     opacity(${opacidad.value}) contrast(${contraste.value}%) 
     blur(${desenfoque.value}px) grayscale(${grises.value}%) 
     sepia(${sepia.value}%) hue-rotate(${hue.value}deg) 
@@ -148,16 +145,16 @@ negativo.addEventListener("change", addFiltros);
 //REESTABLECER FILTROS
 const botonReestablecer = document.getElementById("btn-reestablecer");
 const resetFiltros = () =>{
-    brillo.value = 1; opacidad.value = 1; contraste.value = 100;
+    brillo.value = 0.5; opacidad.value = 0.5; contraste.value = 100;
     desenfoque.value = 0; grises.value = 0; sepia.value = 0;
     hue.value = 0; saturado.value = 100; negativo.value = 0;
 };
 
 botonReestablecer.addEventListener("click", () =>{
-    imgMeme.style.filter = "none";
+    imagenMeme.style.filter = "none";
     resetFiltros();
 });
-*/
+
 
 
 
