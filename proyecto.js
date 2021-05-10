@@ -95,7 +95,15 @@ const color = document.getElementById("colorFondoDiv");
 color.addEventListener('input', cambiarcolor)
 
 
-//
+//CAMBIAR NUMERO DE COLOR DEL FONDO
+
+
+const spanColorFondo = document.querySelector("#nombreColorFondoDiv");
+
+color.addEventListener('input', () => {
+  
+  spanColorFondo.textContent = color.value;
+});
 
 
 

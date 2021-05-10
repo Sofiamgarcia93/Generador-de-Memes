@@ -71,7 +71,7 @@
                 <div class="ajustesFondo">
 
                     <div class=" propiedadFondoImg panel-control-input">
-                        <input type="color" name="" id="colorFondoDiv">
+                        <input type="color" name="" id="colorFondoDiv" value="#FFFFF">
                         <span id="nombreColorFondoDiv">#FFFFF</span>
                     </div>
 
@@ -148,7 +148,7 @@
         <h3 class="tituloPropiedades">SUPERIOR</h3>
 
 
-        <textarea  name="" id="topText" minlength="1" maxlength="50" class="colorInputYButton inputTextMeme">Top Text</textarea>
+        <textarea  name="" id="topText" minlength="1" maxlength="50" class="panel-control-input inputTextMeme">TOP TEXT</textarea>
         <div class="check">
             <input type="checkbox" name="" id="checkTopTex">
             <label for="topText">Sin texto superior</label>
@@ -156,7 +156,7 @@
         
         <h3 class="tituloPropiedades">INFERIOR</h3>
 
-        <textarea name="" id="bottomText" minlength="1" maxlength="50" class="colorInputYButton inputTextMeme">Bottom Text</textarea>
+        <textarea name="" id="bottomText" minlength="1" maxlength="50" class="panel-control-input inputTextMeme">BOTTOM TEXT</textarea>
         <div>
             <input type="checkbox" name="" id="checkBottomTex">
             <label for="bottomText">Sin texto inferior</label>
@@ -164,7 +164,7 @@
   
         <h3 class="tituloPropiedades">FUENTE</h3>
 
-        <select name="" id="selectTipografias" class="familiaFuente colorInputYButton">
+        <select name="" id="selectTipografias" class="familiaFuente panel-control-input">
             <option value="'Impact'">Impact</option>
             <option value="'Arial'">Arial</option>
             <option value="'Trebuchet MS'">Trebuchet</option>
@@ -178,43 +178,46 @@
   
 
         <div class="alineacionYTamanioFuente">
-            <input type="number" name="tamanioFuente" id="tamanioFuente" class="colorInputYButton " min="10" max="40" value="16">
+            <input type="number" name="tamanioFuente" id="tamanioFuente" class="panel-control-input " min="10" max="40" value="16">
         
 
        <!-- Alineacion Fuente-->
        
-        <button class="left colorInputYButton buttonAncho">
+        <button class="left buttonAncho panel-control-input">
             <i class="fas fa-align-left"></i>
         </button>
-        <button class="center colorInputYButton buttonAncho">
+        <button class="center panel-control-input buttonAncho">
             <i class="fas fa-align-center"></i>
         </button>
-        <button class="right colorInputYButton buttonAncho">
+        <button class="right panel-control-input buttonAncho">
             <i class="fas fa-align-right"></i>
         </button>
         </div>
 
         
             <!-- Color de Texto-->
-            <div class="inputColorYFondo">
-                <h3 class="tituloPropiedades">COLOR</h3>
-                <div class="colorInputYButton">
-                    <input type="color" name="colorDeTexto" id="colorDeTexto"  value="#000000">
-                    <span id="refSpanTexto">#000000</span>
-                </div>
-            </div>
+      <div class="inputColorYFondo">
+          <div class="colorTextoYFondo">
+                  <h3 class="tituloPropiedades">COLOR</h3>
+                  <div class="panel-control-input paddi">
+                      <input type="color" name="colorDeTexto" id="colorDeTexto"  value="#000000">
+                      <span id="refSpanTexto">#000000</span>
+                  </div>
+          </div>  
 
-            <!-- Color de Fondo-->
+              <!-- Color de Fondo-->
 
-        <div class="inputColorYFondo">
+        <div class="colorTextoYFondo">  
 
-        <h3 class="tituloPropiedades">FONDO</h3>
-        <div class="colorInputYButton">
-            <input type="color" name="colorDeFondo" id="colorDeFondo" value="#FFFFFF">
-            <span id="refSpanFondo">#FFFFFF</span>
-        </div>
-
-        </div>
+          <h3 class="tituloPropiedades">FONDO</h3>
+          <div class="panel-control-input paddi">
+              <input type="color" name="colorDeFondo" id="colorDeFondo" value="#FFFFFF">
+              <span id="refSpanFondo">#FFFFFF</span>
+          </div>
+        </div> 
+        
+      </div>
+       
 
           <!-- Check fondo transparente-->
       <div class="check">

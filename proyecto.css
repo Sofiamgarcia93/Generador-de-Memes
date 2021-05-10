@@ -172,7 +172,6 @@ p{
     width: 100%;
     height: 100%;
     font-family: 'Sintony', sans-serif;
-    padding-top: 15px  0 0 15px ;
     overflow: scroll;/*scroll panel texto*/
   }
 
@@ -186,11 +185,12 @@ p{
 }
   .tituloPropiedades{
     padding: 15px 0 5px 0;
-    font-size: 10px;
+    font-size: 14px;
     color: white;
     margin-bottom: 8px;
     width: 100%;
     margin-top: 0;
+    text-align: left;
 }
 
 .ocultar {
@@ -338,9 +338,66 @@ ESTILOS DEL PANEL TEXTO
 
 
 .alineacionYTamanioFuente{
-  width: 40%;
+  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
   margin-top: 5px;
+}
+
+#panelText{
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
+.inputTextMeme{
+  width: 100%;
+  border: none;
+  font-family: var(--generalFont);
+  font-size: 14px;
+  padding-top: 8px;
+  color: white;
+}
+
+.familiaFuente{
+  width: 100%;
+  color: white;
+}
+
+#tamanioFuente{
+  width: 50%;
+  color: white;
+}
+
+.left{
+  width: 17%;
+  color: white;
+}
+
+.center{
+  width: 17%;
+  color: white;
+}
+
+.right{
+  width: 17%;
+  color: white;
+}
+
+.inputColorYFondo{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.colorTextoYFondo{
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 16px;
+  width: 50%;
+  text-align: center;
+}
+
+.paddi{
+  padding-top: 5px;
 }
