@@ -15,6 +15,7 @@
     --letra:16px;
     --letraTitulo: 36px;
     --tamanioTitulo: 300;
+    --colorLetra: rgb(74, 77, 80);
     
 }
 
@@ -28,6 +29,7 @@ body.modoOscuro{
     --letra: 16px;
     --letraTitulo: 36px;
     --tamanioTitulo: 300;
+    --colorLetra: rgb(198, 198, 199);
 }
 
 
@@ -90,7 +92,7 @@ header{
   margin: 5px;
   height: 30px;
   background-color: var(--colorHeader);
-  color: var(--color);
+  color: var(--colorLetra);
   font-size: 20px;
   }
 
@@ -361,11 +363,13 @@ ESTILOS DEL PANEL TEXTO
 .familiaFuente{
   width: 100%;
   color: white;
+  font-size: 16px;
 }
 
 #tamanioFuente{
   width: 50%;
   color: white;
+  font-size: 16px;
 }
 
 .left{
@@ -395,9 +399,39 @@ ESTILOS DEL PANEL TEXTO
   color: white;
   font-size: 16px;
   width: 50%;
-  text-align: center;
+  text-align: left;
+  
 }
 
 .paddi{
   padding-top: 5px;
+  padding-left: 15px;
+}
+
+.buttonContorno{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.ninguno{
+  width: 30%;
+  color: white;
+  font-size: 16px;
+}
+.claro{
+  width: 30%;
+  color: white;
+  font-size: 16px;
+}
+.oscuro{
+  width: 30%;
+  color: white;
+  font-size: 16px;
+}
+.anchoEspaciadoInterlineado{
+  width: 100%;
+  color: white;
+  padding-left: 10px;
+  font-size: 16px;
 }
