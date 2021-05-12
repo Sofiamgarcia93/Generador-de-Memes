@@ -20,11 +20,11 @@
 }
 
 body.modoOscuro{
-   --colorFondo: rgb(52, 63, 62) ;
+   --colorFondo: rgb(41, 44, 44) ;
     --color: rgb(101, 103, 104);
     --fondoMain: rgb(18, 22, 22);
     --colorHeader: rgb(80, 90, 91);
-    --colorPanel:rgb(52, 63, 62);
+    --colorPanel:rgb(70, 63, 63);
     --generalFont: "Open Sans", sans-serif;
     --letra: 16px;
     --letraTitulo: 36px;
@@ -249,8 +249,7 @@ ESTILOS DEL PANEL IMAGEN
 
 #nombreColorFondoDiv{
   font-size: 0.875rem;
-  color: white;
-  z-index: -1;
+  
   
 }
 
@@ -313,6 +312,7 @@ cursor: pointer;
   transition: background-color 0.2s;
   margin-right: 10px;
   margin-bottom: 5px;
+  color: rgb(255, 255, 255);
 }
 
 
@@ -435,3 +435,153 @@ ESTILOS DEL PANEL TEXTO
   padding-left: 10px;
   font-size: 16px;
 }
+
+/*VERSION ESCRITORIO*/
+@media (min-width: 1200px){
+  
+  .recuadroMeme{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 69vh;
+    height: 69vh;
+    padding-top: 50px;
+   
+  }
+  .meme-text{
+    font-size: 30px;
+  }
+
+  /*ASIDE*/
+  .cerrarPanel{
+    display: none;
+  }
+
+
+  
+  #panelAside{
+    z-index: 10;
+    width: 35vh;
+    height: 100%;
+    overflow: hidden;
+    
+  }
+
+  #panelAside.ocultar{
+    display: block;
+  }
+
+  /*PANEL DE IMAGEN*/
+  .panelImg{
+    height: 100vh;
+  }
+
+
+
+  .tituloSection{
+    font-size: 16px;
+}
+  .tituloPropiedades{
+    padding: 15px 0 1px 0;
+    font-size: 12px;
+  }
+.propiedadFondoImg{
+  font-size: 12px;
+  padding: 1px 3px;
+  
+}
+
+#nombreColorFondoDiv{
+  font-size:12px;
+  color: white;
+  
+  
+}
+
+.column{
+  font-size: 12px;
+}
+.btn-reestablecer{
+  margin-left: 70px;
+  margin-top: 40px;
+  
+}
+/*PANEL DE TEXTO*/
+
+#panelText{
+  height: fit-content;
+  padding-bottom: 30px;
+  align-items: stretch;
+}
+.inputTextMeme{
+  width: 100%;
+  border: none;
+  font-family: var(--generalFont);
+  font-size: 10px;
+  padding-top: 8px;
+  color: white;
+}
+
+.little{
+  font-size: 12px;
+}
+.paddi{
+  padding-top: 2px;
+  padding-left: 15px;
+}
+
+.panel-control-input{
+  font-size: 12px;
+  height: 30px;
+
+}
+
+#tamanioFuente{
+  font-size: 12px;
+}
+}
+
+ /*VERSION DESKTOPS*/
+ @media (min-width: 992px) and (max-width: 1199.98px){
+  #panelAside{
+    z-index: 10;
+    width: 25vh;
+    height: 100%;
+    overflow: hidden;
+  }
+  .recuadroMeme{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60vh;
+    height: 60vh;
+    padding-top: 50px;
+   
+  }
+ }
+    
+/*VERSION TABLETS*/
+ @media (min-width: 768px) and (max-width: 991.98px){
+    
+  #panelAside{
+    z-index: 10;
+    width: 15vh;
+    height: 100%;
+    overflow: hidden;
+    
+  }
+  .recuadroMeme{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40vh;
+    height: 40vh;
+    padding-top: 50px;
+   
+  }
+ }
+
+ 
