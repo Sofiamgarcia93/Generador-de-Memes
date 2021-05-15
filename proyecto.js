@@ -323,21 +323,23 @@ checkboxInferior.addEventListener('change',() =>{
     const contornoOscuro = document.querySelector('.oscuro');
 
 
-    contornoOscuro.addEventListener('click', () =>{
-      topTitle.style = '-webkit-text-stroke: 2px black;'
-      bottomTitle.style = '-webkit-text-stroke: 2px black;'
+  contornoClaro.addEventListener('click', () =>{
+      topTitle.style.textShadow = 'rgb(255 255 255) 2px 2px, rgb(255 255 255) -2px 2px, rgb(255 255 255) 2px -2px, rgb(255 255 255) -2px -2px'
+      bottomTitle.style.textShadow = 'rgb(255 255 255) 2px 2px, rgb(255 255 255) -2px 2px, rgb(255 255 255) 2px -2px, rgb(255 255 255) -2px -2px'
+      
     })
+    contornoOscuro.addEventListener('click', () =>{
+      topTitle.style.textShadow = "rgb(0 0 0) 2px 2px, rgb(0 0 0) -2px 2px, rgb(0 0 0) 2px -2px, rgb(0 0 0) -2px -2px";
 
-    contornoClaro.addEventListener('click', () =>{
-      topTitle.style = '-webkit-text-stroke: 2px;'
-      bottomTitle.style = '-webkit-text-stroke: 2px;'
+      bottomTitle.style.textShadow = "rgb(0 0 0) 2px 2px, rgb(0 0 0) -2px 2px, rgb(0 0 0) 2px -2px, rgb(0 0 0) -2px -2px";
+
     })
 
     contornoNinguno.addEventListener('click', () =>{
-      topTitle.style = '-webkit-text-stroke:none;'
-      bottomTitle.style = '-webkit-text-stroke:none;'
+      topTitle.style.textShadow = 'none';
+      bottomTitle.style.textShadow = 'none';
     })
-
+   
 
 
 
@@ -345,9 +347,9 @@ checkboxInferior.addEventListener('change',() =>{
     const espaciado = document.getElementById('espaciado');
 
     espaciado.addEventListener('input', () =>{
-      valorDeEspaciado = espaciado.value;
-      topTitle.style.padding = `${valorDeEspaciado}px`;
-      bottomTitle.style.padding = `${valorDeEspaciado}px`;
+      
+      topTitle.style.padding = `${espaciado.value}px`;
+      bottomTitle.style.padding = `${espaciado.value}px`;
     })
 
 
@@ -355,8 +357,8 @@ checkboxInferior.addEventListener('change',() =>{
     const interlineado = document.getElementById('interlineado');
 
     interlineado.addEventListener('input', ()=>{
-      valorInterlineado = interlineado.value;
-      topTitle.style.lineHeight = `${valorInterlineado}`;
-      bottomTitle.style.lineHeight = `${valorInterlineado}`;
+    
+      topTitle.style.lineHeight = interlineado.value;
+      bottomTitle.style.lineHeight = interlineado.value;
     })
 

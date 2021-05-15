@@ -1,46 +1,43 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 /*VARIABLES MODO CALRO Y MODO OSCURO*/
-  body.modoClaro{
-    --colorFondo: rgb(178, 181, 185);
-    --color:  rgb(204, 196, 196);
-    --fondoMain: rgb(220, 237, 255);
-    --colorHeader: rgb(221, 223, 226);
-    --colorPanel: rgb(118, 120, 124);
-    --generalFont: "Open Sans", sans-serif;;
-    --letra:16px;
-    --letraTitulo: 36px;
-    --tamanioTitulo: 300;
-    --colorLetra: rgb(74, 77, 80);
-    
+body.modoClaro {
+  --colorFondo: rgb(178, 181, 185);
+  --color: rgb(204, 196, 196);
+  --fondoMain: rgb(220, 237, 255);
+  --colorHeader: rgb(221, 223, 226);
+  --colorPanel: rgb(118, 120, 124);
+  --generalFont: "Open Sans", sans-serif;
+  --letra: 16px;
+  --letraTitulo: 36px;
+  --tamanioTitulo: 300;
+  --colorLetra: rgb(74, 77, 80);
 }
 
-body.modoOscuro{
-   --colorFondo: rgb(41, 44, 44) ;
-    --color: rgb(101, 103, 104);
-    --fondoMain: rgb(18, 22, 22);
-    --colorHeader: rgb(80, 90, 91);
-    --colorPanel:rgb(70, 63, 63);
-    --generalFont: "Open Sans", sans-serif;
-    --letra: 16px;
-    --letraTitulo: 36px;
-    --tamanioTitulo: 300;
-    --colorLetra: rgb(198, 198, 199);
+body.modoOscuro {
+  --colorFondo: rgb(41, 44, 44);
+  --color: rgb(101, 103, 104);
+  --fondoMain: rgb(18, 22, 22);
+  --colorHeader: rgb(80, 90, 91);
+  --colorPanel: rgb(70, 63, 63);
+  --generalFont: "Open Sans", sans-serif;
+  --letra: 16px;
+  --letraTitulo: 36px;
+  --tamanioTitulo: 300;
+  --colorLetra: rgb(198, 198, 199);
 }
-
 
 body {
   background-color: var(--colorFondo);
   color: var(--color);
   height: 100vh;
-  
 }
 
-main{
+main {
   /*background-color: var(--colorFondo);
   min-height: 100vh;
   padding: 20px;*/
@@ -50,27 +47,25 @@ main{
   align-items: center;
 }
 
-      
-header{
+header {
   background-color: var(--colorHeader);
   text-align: center;
-  height:auto;
+  height: auto;
   width: auto;
-
 }
 
- /*ESTILOS DEL TITULO*/
- h1{
+/*ESTILOS DEL TITULO*/
+h1 {
   color: var(--colorLetra);
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: var(--tamanioTitulo);
   font-size: var(--letraTitulo);
   text-align: center;
   padding-top: 10px;
-  }
+}
 
 /*ESTILOS BOTONES DE TEXTO IMG Y MODO OSC/CLARO*/
-.botonsContainer{
+.botonsContainer {
   /*box-sizing:border-box;
   color: rgb(66, 66, 66);
   display:flex;
@@ -80,12 +75,10 @@ header{
   margin-bottom: 5px;*/
   text-align: center;
   padding: 10px;
- 
- 
 }
 
-.sinContorno{
-  font-family: 'Sintony', sans-serif;
+.sinContorno {
+  font-family: "Sintony", sans-serif;
   border: 0;
   outline: none;
   padding: 0 10px 0 10px;
@@ -94,69 +87,60 @@ header{
   background-color: var(--colorHeader);
   color: var(--colorLetra);
   font-size: 20px;
-  }
+}
 
-  /*HOVER DE BOTONES DEL HEADER*/
+/*HOVER DE BOTONES DEL HEADER*/
 
-  .sinContorno:hover{
-    background-color: var(--colorFondo);
-    transition: 0.5s;
-    border-radius: 5px;
-  }
+.sinContorno:hover {
+  background-color: var(--colorFondo);
+  transition: 0.5s;
+  border-radius: 5px;
+}
 
- 
-
-p{
+p {
   color: var(--colorLetra);
   font-size: var(--letra);
-  font-family: 'Open Sans', sans-serif;
-  }
+  font-family: "Open Sans", sans-serif;
+}
 
-  
+/*ESTILOS DEL CONTEINER DEL MEME */
+.recuadroMeme {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50vh;
+  height: 50vh;
+  padding-top: 70px;
+}
 
-  /*ESTILOS DEL CONTEINER DEL MEME */
-  .recuadroMeme{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 50vh;
-    height: 50vh;
-    padding-top: 70px;
-   
-  }
+.meme-text {
+  font-family: Impact;
+  font-size: 16px;
+  background-color: white;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0px;
+  color: rgb(52, 63, 62);
+}
 
-  
-  
-  .meme-text {
-    font-family: Impact;
-    font-size: 16px;
-    background-color: white;
-    width: 100%;
-    text-align: center;
-    padding: 10px 0px;
-    color: rgb(52, 63, 62);
-  }
-  
-  .meme-img {
-    background-color: black;
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position-x: center;
-    background-position-y: center;
-    
-    
-  }
-  
+.meme-img {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: center;
+  background-position-y: center;
+}
+
 /*BOTON DE DESCARGAR MEME*/
 
-.botonDescargar{
-  font-family: 'Sintony', sans-serif;
+.botonDescargar {
+  font-family: "Sintony", sans-serif;
   background-color: rgb(8, 165, 60);
   color: white;
-  border: 0 ;
+  border: 0;
   border-radius: 5px;
   width: 160px;
   height: 50px;
@@ -165,70 +149,68 @@ p{
 
 /*ESTILOS DEL ASIDE*/
 
-  #panelAside{
-    background-color: var(--colorPanel);/*aplicacion de variable*/
-    position: fixed;
-    top: 0px;
-    right: 0;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    font-family: 'Sintony', sans-serif;
-    overflow: scroll;/*scroll panel texto*/
-  }
-
-  /*titulo de panel img y text*/
-
-  .tituloSection{
-    padding: 10px 0px;
-    text-align: center;
-    color: white;
-    font-size: 20px;
+#panelAside {
+  background-color: var(--colorPanel); /*aplicacion de variable*/
+  position: fixed;
+  top: 0px;
+  right: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  font-family: "Sintony", sans-serif;
+  overflow: scroll; /*scroll panel texto*/
 }
-  .tituloPropiedades{
-    padding: 15px 0 5px 0;
-    font-size: 14px;
-    color: white;
-    margin-bottom: 8px;
-    width: 100%;
-    margin-top: 0;
-    text-align: left;
+
+/*titulo de panel img y text*/
+
+.tituloSection {
+  padding: 10px 0px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+.tituloPropiedades {
+  padding: 15px 0 5px 0;
+  font-size: 14px;
+  color: white;
+  margin-bottom: 8px;
+  width: 100%;
+  margin-top: 0;
+  text-align: left;
 }
 
 .ocultar {
   display: none;
 }
 
-  .cerrarPanel{
-    position: fixed;
-    top: 10px;
-    right: 20px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    background-color: var(--colorPanel);
-    color: var(--color);
-    font-size: 20px;
-    
-    
-  }
- 
+.cerrarPanel {
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  background-color: var(--colorPanel);
+  color: var(--color);
+  font-size: 20px;
+}
+
 /*
 *************************************
 ESTILOS DEL PANEL IMAGEN
 
 *************************************
 */
-#panelImg{
+#panelImg {
   padding-left: 20px;
   padding-right: 10px;
 }
 
-#url-img-input{
+#url-img-input {
   width: 100%;
 }
 
-.ajustesFondo{
+.ajustesFondo {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -236,27 +218,24 @@ ESTILOS DEL PANEL IMAGEN
   font-family: var(--generalFont);
   background-color: transparent;
   outline: 0;
-  
 }
 
-.propiedadFondoImg{
-  border: 1px solid ;
+.propiedadFondoImg {
+  border: 1px solid;
   border-radius: 5%;
   font-size: 16px;
   padding: 3px 3px;
   width: 50%;
 }
 
-#nombreColorFondoDiv{
+#nombreColorFondoDiv {
   font-size: 0.875rem;
-  
-  
 }
 
-.lumiFondo{
+.lumiFondo {
   width: 50%;
 }
-#tipoDeFondo{
+#tipoDeFondo {
   width: 100%;
 }
 /*ESTILOS DE LA BOLITA DEL COLOR DE FONDO*/
@@ -273,36 +252,30 @@ input[type="color"] {
 }
 input[type="color"]::-webkit-color-swatch-wrapper {
   padding: 0;
-
 }
 input[type="color"]::-webkit-color-swatch {
   border: none;
 }
 
-
 /*estilos de la barra de los filtros de img*/
-input[type=range]{  
-  margin-top: 5px;   
+input[type="range"] {
+  margin-top: 5px;
   width: 100%;
   background-color: rgb(187, 193, 216);
   border-radius: 10px;
   appearance: none;
-  height: 6px;    
+  height: 6px;
 }
 /*ESTILOS DE LA BOLITA DE LOS FILTROS DE IMG*/
-input[type=range]::-webkit-slider-thumb {
--webkit-appearance: none;
-border: 1px solid rgb(0, 0, 0);
-height: 16px;
-width: 16px;
-border-radius: 25px;
-background: rgb(236, 234, 234);
-cursor: pointer;
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 1px solid rgb(0, 0, 0);
+  height: 16px;
+  width: 16px;
+  border-radius: 25px;
+  background: rgb(236, 234, 234);
+  cursor: pointer;
 }
- 
-
-
-
 
 .panel-control-input {
   height: 36px;
@@ -313,10 +286,10 @@ cursor: pointer;
   margin-right: 10px;
   margin-bottom: 5px;
   color: rgb(255, 255, 255);
+  outline: none;
 }
 
-
-.btn-reestablecer{
+.btn-reestablecer {
   color: white;
   height: 46px;
   width: 120px;
@@ -329,8 +302,6 @@ cursor: pointer;
   margin-left: 120px;
 }
 
-
-
 /*
 *************************************
 ESTILOS DEL PANEL TEXTO
@@ -338,20 +309,19 @@ ESTILOS DEL PANEL TEXTO
 *************************************
 */
 
-
-.alineacionYTamanioFuente{
+.alineacionYTamanioFuente {
   width: 100%;
   display: flex;
   flex-direction: row;
   margin-top: 5px;
 }
 
-#panelText{
+#panelText {
   padding-left: 20px;
   padding-right: 10px;
 }
 
-.inputTextMeme{
+.inputTextMeme {
   width: 100%;
   border: none;
   font-family: var(--generalFont);
@@ -360,76 +330,75 @@ ESTILOS DEL PANEL TEXTO
   color: white;
 }
 
-.familiaFuente{
+.familiaFuente {
   width: 100%;
   color: white;
   font-size: 16px;
 }
 
-#tamanioFuente{
+#tamanioFuente {
   width: 50%;
   color: white;
   font-size: 16px;
 }
 
-.left{
+.left {
   width: 17%;
   color: white;
 }
 
-.center{
+.center {
   width: 17%;
   color: white;
 }
 
-.right{
+.right {
   width: 17%;
   color: white;
 }
 
-.inputColorYFondo{
+.inputColorYFondo {
   display: flex;
   flex-direction: row;
   width: 100%;
 }
 
-.colorTextoYFondo{
+.colorTextoYFondo {
   display: flex;
   flex-direction: column;
   color: white;
   font-size: 16px;
   width: 50%;
   text-align: left;
-  
 }
 
-.paddi{
+.paddi {
   padding-top: 5px;
   padding-left: 15px;
 }
 
-.buttonContorno{
+.buttonContorno {
   width: 100%;
   display: flex;
   flex-direction: row;
 }
 
-.ninguno{
+.ninguno {
   width: 30%;
   color: white;
   font-size: 16px;
 }
-.claro{
+.claro {
   width: 30%;
   color: white;
   font-size: 16px;
 }
-.oscuro{
+.oscuro {
   width: 30%;
   color: white;
   font-size: 16px;
 }
-.anchoEspaciadoInterlineado{
+.anchoEspaciadoInterlineado {
   width: 100%;
   color: white;
   padding-left: 10px;
@@ -437,9 +406,8 @@ ESTILOS DEL PANEL TEXTO
 }
 
 /*VERSION ESCRITORIO*/
-@media (min-width: 1200px){
-  
-  .recuadroMeme{
+@media (min-width: 1200px) {
+  .recuadroMeme {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -447,110 +415,99 @@ ESTILOS DEL PANEL TEXTO
     width: 69vh;
     height: 69vh;
     padding-top: 50px;
-   
   }
-  .meme-text{
+  .meme-text {
     font-size: 30px;
   }
 
   /*ASIDE*/
-  .cerrarPanel{
+  .cerrarPanel {
     display: none;
   }
 
-
-  
-  #panelAside{
+  #panelAside {
     z-index: 10;
     width: 35vh;
     height: 100%;
     overflow: hidden;
-    
   }
 
-  #panelAside.ocultar{
+  #panelAside.ocultar {
     display: block;
   }
 
   /*PANEL DE IMAGEN*/
-  .panelImg{
+  .panelImg {
     height: 100vh;
   }
 
-
-
-  .tituloSection{
+  .tituloSection {
     font-size: 16px;
-}
-  .tituloPropiedades{
+  }
+  .tituloPropiedades {
     padding: 15px 0 1px 0;
     font-size: 12px;
   }
-.propiedadFondoImg{
-  font-size: 12px;
-  padding: 1px 3px;
-  
+  .propiedadFondoImg {
+    font-size: 12px;
+    padding: 1px 3px;
+  }
+
+  #nombreColorFondoDiv {
+    font-size: 12px;
+    color: white;
+  }
+
+  .column {
+    font-size: 12px;
+  }
+  .btn-reestablecer {
+    margin-left: 70px;
+    margin-top: 40px;
+  }
+  /*PANEL DE TEXTO*/
+
+  #panelText {
+    height: fit-content;
+    padding-bottom: 30px;
+    align-items: stretch;
+  }
+  .inputTextMeme {
+    width: 100%;
+    border: none;
+    font-family: var(--generalFont);
+    font-size: 10px;
+    padding-top: 8px;
+    color: white;
+  }
+
+  .little {
+    font-size: 12px;
+  }
+  .paddi {
+    padding-top: 2px;
+    padding-left: 15px;
+  }
+
+  .panel-control-input {
+    font-size: 12px;
+    height: 30px;
+  }
+
+  #tamanioFuente {
+    font-size: 12px;
+  }
 }
 
-#nombreColorFondoDiv{
-  font-size:12px;
-  color: white;
-  
-  
-}
-
-.column{
-  font-size: 12px;
-}
-.btn-reestablecer{
-  margin-left: 70px;
-  margin-top: 40px;
-  
-}
-/*PANEL DE TEXTO*/
-
-#panelText{
-  height: fit-content;
-  padding-bottom: 30px;
-  align-items: stretch;
-}
-.inputTextMeme{
-  width: 100%;
-  border: none;
-  font-family: var(--generalFont);
-  font-size: 10px;
-  padding-top: 8px;
-  color: white;
-}
-
-.little{
-  font-size: 12px;
-}
-.paddi{
-  padding-top: 2px;
-  padding-left: 15px;
-}
-
-.panel-control-input{
-  font-size: 12px;
-  height: 30px;
-
-}
-
-#tamanioFuente{
-  font-size: 12px;
-}
-}
-
- /*VERSION DESKTOPS*/
- @media (min-width: 992px) and (max-width: 1199.98px){
-  #panelAside{
+/*VERSION DESKTOPS*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #panelAside {
     z-index: 10;
     width: 25vh;
     height: 100%;
     overflow: hidden;
   }
-  .recuadroMeme{
+  .recuadroMeme {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -558,21 +515,18 @@ ESTILOS DEL PANEL TEXTO
     width: 60vh;
     height: 60vh;
     padding-top: 50px;
-   
   }
- }
-    
+}
+
 /*VERSION TABLETS*/
- @media (min-width: 768px) and (max-width: 991.98px){
-    
-  #panelAside{
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #panelAside {
     z-index: 10;
     width: 15vh;
     height: 100%;
     overflow: hidden;
-    
   }
-  .recuadroMeme{
+  .recuadroMeme {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -580,8 +534,5 @@ ESTILOS DEL PANEL TEXTO
     width: 40vh;
     height: 40vh;
     padding-top: 50px;
-   
   }
- }
-
- 
+}
