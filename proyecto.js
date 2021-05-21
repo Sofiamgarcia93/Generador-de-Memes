@@ -304,16 +304,21 @@ checkboxInferior.addEventListener('change',() =>{
 
     const fondoTransparente = document.getElementById('fondoTransparente');
 
-    fondoTransparente.addEventListener('change', () =>{
-      if(fondoTransparente.checked){
-        topTitle.style.backgroundColor = 'transparent';
-        bottomTitle.style.backgroundColor = 'transparent';
-      }else{
-        topTitle.style.backgroundColor = colorDeFondo.value;
-        bottomTitle.style.backgroundColor = colorDeFondo.value;
-      }
-    })
 
+    fondoTransparente.addEventListener("change", () =>{
+        if(fondoTransparente.checked){
+            topTitle.style.backgroundColor = 'transparent'; 
+            bottomTitle.style.backgroundColor = 'transparent'; 
+            topTitle.style.position = "absolute";
+            bottomTitle.style.position = "absolute";
+            
+        }else{
+            topTitle.style.backgroundColor = colorDeFondo.value;
+            bottomTitle.style.backgroundColor = colorDeFondo.value;
+            topTitle.style.position = "static";
+            bottomTitle.style.position = "static";
+        }
+    });
 
 
     //CONTORNO

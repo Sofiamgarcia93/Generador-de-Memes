@@ -112,6 +112,7 @@ p {
   width: 50vh;
   height: 50vh;
   padding-top: 70px;
+  position: relative;
 }
 
 .meme-text {
@@ -122,6 +123,12 @@ p {
   text-align: center;
   padding: 10px 0px;
   color: rgb(52, 63, 62);
+}
+.top {
+  top: 0;
+}
+.bottom {
+  bottom: 0;
 }
 
 .meme-img {
