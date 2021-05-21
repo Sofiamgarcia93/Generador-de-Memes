@@ -288,6 +288,12 @@ input[type="range"]::-webkit-slider-thumb {
   color: rgb(255, 255, 255);
   outline: none;
 }
+/*HOVERS*/
+
+.panel-control-input:hover {
+  background-color: var(--colorFondo);
+  transition: 0.5s;
+}
 
 .btn-reestablecer {
   color: white;
@@ -295,11 +301,11 @@ input[type="range"]::-webkit-slider-thumb {
   width: 120px;
   background-color: var(--color);
   border: none;
-  box-shadow: 2px 2px 5px (0, 0, 0, 0.1);
-  transition: background-color 0.2s;
-  margin-right: 10px;
-  margin-top: 15px;
-  margin-left: 120px;
+}
+
+.btn-reestablecer:hover {
+  background-color: var(--colorFondo);
+  transition: 0.5s;
 }
 
 /*
@@ -462,7 +468,7 @@ ESTILOS DEL PANEL TEXTO
     font-size: 12px;
   }
   .btn-reestablecer {
-    margin-left: 70px;
+    margin-left: 40px;
     margin-top: 40px;
   }
   /*PANEL DE TEXTO*/
