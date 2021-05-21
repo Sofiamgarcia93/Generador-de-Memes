@@ -489,7 +489,7 @@ ESTILOS DEL PANEL TEXTO
     width: 100%;
     border: none;
     font-family: var(--generalFont);
-    font-size: 10px;
+    font-size: 8px;
     padding-top: 8px;
     color: white;
   }
@@ -498,7 +498,7 @@ ESTILOS DEL PANEL TEXTO
     font-size: 12px;
   }
   .paddi {
-    padding-top: 2px;
+    padding-top: 1px;
     padding-left: 15px;
   }
 
