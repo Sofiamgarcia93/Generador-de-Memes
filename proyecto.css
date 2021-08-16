@@ -332,8 +332,12 @@ ESTILOS DEL PANEL TEXTO
 #panelText {
   padding-left: 20px;
   padding-right: 10px;
+  height: 100vh;
+  overflow: auto;
 }
-
+.contenedorPanelDeTexto {
+  height: 100vh;
+}
 .inputTextMeme {
   width: 100%;
   border: none;
