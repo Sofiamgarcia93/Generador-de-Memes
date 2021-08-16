@@ -107,7 +107,7 @@ color.addEventListener('input', () => {
 
 
 
-////---- Tipos de fondo  ---// REVISAR PORQUE NO ANDAN TODOS
+////---- Tipos de fondo  ---// 
 const tipoDeFondo = document.querySelector("#tipoDeFondo");
 
 tipoDeFondo.addEventListener("input", () => {
@@ -117,10 +117,13 @@ tipoDeFondo.addEventListener("input", () => {
 
 
 
-// FILTROS
+//
+/// FILTROS
 
 
-/////FILTROS DE IMAGEN/*
+/////
+///
+///FILTROS DE IMAGEN/*
 
 const brillo = document.getElementById("brillo");
 const opacidad = document.getElementById("opacidad");
@@ -150,7 +153,8 @@ hue.addEventListener("change", addFiltros);
 saturado.addEventListener("change", addFiltros);
 negativo.addEventListener("change", addFiltros);
 
-//REESTABLECER FILTROS
+//
+///REESTABLECER FILTROS
 const botonReestablecer = document.getElementById("btn-reestablecer");
 const resetFiltros = () =>{
     brillo.value = 0.5; opacidad.value = 0.5; contraste.value = 100;
@@ -174,27 +178,32 @@ botonReestablecer.addEventListener("click", () =>{
 //************************************* */
 
 
-//ELEMENTOS DEL TOP TITLE
+//
+///ELEMENTOS DEL TOP TITLE
   const topTitle = document.querySelector(".meme-text");
   const topText = document.getElementById("topText");
   const bottomText = document.getElementById("bottomText")
   const bottomTitle = document.querySelector(".bottom");
   
-//EVENTO DE INPUT TOP      
+//
+///EVENTO DE INPUT TOP      
    topText.addEventListener("input", () =>{
        topTitle.innerText = topText.value;
         });
 
-//EVENTO DE INPUT  BOTTOM     
+//
+///EVENTO DE INPUT  BOTTOM     
 bottomText.addEventListener("input", () =>{
   bottomTitle.innerText = bottomText.value;
    });
 
-//ELEMENTOS PARA OCULTAR TEXTO ARRIBA
+//
+///ELEMENTOS PARA OCULTAR TEXTO ARRIBA
 
 const checkboxSup = document.getElementById ("checkTopTex");
 
-//EVENTO PARA OCULTAR TEXTO DE ARRIBA
+//
+///EVENTO PARA OCULTAR TEXTO DE ARRIBA
 
 
 checkboxSup.addEventListener('change',() =>{
@@ -209,11 +218,13 @@ topText.disabled = true;
 })
 
 
-//ELEMENTOS PARA OCULTAR TEXTO ABAJO
+//
+///ELEMENTOS PARA OCULTAR TEXTO ABAJO
 
 const checkboxInferior = document.getElementById ("checkBottomTex");
 
-//EVENTO PARA OCULTAR TEXTO DE ABAJO
+//
+///EVENTO PARA OCULTAR TEXTO DE ABAJO
 
 
 checkboxInferior.addEventListener('change',() =>{
@@ -229,7 +240,8 @@ checkboxInferior.addEventListener('change',() =>{
     })
 
 
-    //CAMBIAR DE FUENTE 
+    //
+    ///CAMBIAR DE FUENTE 
 
     const selecDeFuente = document.querySelector('#selectTipografias');
     
@@ -240,7 +252,8 @@ checkboxInferior.addEventListener('change',() =>{
     })
 
 
-    //CAMBIAR TAMAÑO DE FUENTE 
+    //
+    ///CAMBIAR TAMAÑO DE FUENTE 
 
     const tamanioFuente = document.getElementById('tamanioFuente');
     
@@ -251,7 +264,8 @@ checkboxInferior.addEventListener('change',() =>{
       bottomTitle.style.fontSize =`${selectTamanioFuente}px`;
     })
 
-    //ALINEACION FUENTE
+    //
+    ///ALINEACION FUENTE
 
     const alineIzquierda = document.querySelector('.left');
     const alineCenter    = document.querySelector('.center');
@@ -272,7 +286,8 @@ checkboxInferior.addEventListener('change',() =>{
       bottomTitle.style = 'text-align: right;';
     })
 
-    //COLOR DEL TEXTO
+    //
+    ///COLOR DEL TEXTO
 
 
     const colorDeTexto = document.getElementById('colorDeTexto');
@@ -300,6 +315,7 @@ checkboxInferior.addEventListener('change',() =>{
 
 
 
+    //
     //FONDO TRANSPARENTE
 
     const fondoTransparente = document.getElementById('fondoTransparente');
