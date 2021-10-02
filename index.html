@@ -1,10 +1,17 @@
 <!DOCTYPE html>
+  <!-- La pagina esta en español, pero el lenguaje del documento es ingles. Un lector de pantalla trataria de 
+leerla en ingles (va a leer "yiniradour di mims") y buscadores como google van a recomendar esta web a 
+angloparlantes.
+El lang del documento debe coincidir con el lenguaje que usan los usuarios de esta pagina.  -->
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editor de memes</title>
+    <!-- el icono deberia llamarse favicon.ico, ya que eso es lo que buscan la mayoria de los servicios
+    la ruta esta mal: deberia ser o bien avellanda.png o ./avellanda.png -->
     <link rel="icon" type="image/png" href="/avellanda.png"/>
     
 
@@ -19,12 +26,20 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js" integrity="sha512-Qlv6VSKh1gDKGoJbnyA5RMXYcvnpIqhO++MhIM2fStMcGT9i2T//tSwYFlcyoRRDcDZ+TYHpH8azBBCyhpSeqw==" crossorigin="anonymous"></script>
 </head>
 <!-- el body tiene una clase para hacer cambio a claro y oscuro-->
+
+<!-- separa tus clases con-guiones, igual que los ids. camelCase es para javascript -->
 <body class="modoClaro">
     <header>
 
       <h1>Generador de Memes</h1>
 
         <div class="botonsContainer">
+          <!-- cuando son muchos elementos pone un salto de linea asi el lector no debe 
+          hacer scroll horizontal al leer
+          <button class="sinContorno" id="button-img">
+            <i class="fas fa-file-image"></i>
+            <span>Imagen</span>
+          </button> -->
             <button class="sinContorno" id="button-img"><i class="fas fa-file-image"></i><span>Imagen</span></button>
             <button class="sinContorno" id="button-text"><i class="fas fa-font"></i><span>Texto</span></button>
             <button class="sinContorno" id="boton"><i class="far fa-lightbulb"></i><span id="textInfo">Modo claro</span></button>
@@ -37,6 +52,9 @@
     <div class="recuadroMeme">
 
       <p class="meme-text top">Top Text</p>
+      <!-- no dejes estos espacios -->
+
+      <!-- neceitas un aria label aca para indicarle al lector que hace esta imagen -->
       <div  class = "meme-img" id ="colorFondoImg"> 
       
       </div>
@@ -51,7 +69,7 @@
 
   <!--ASIDE PANEL OCULTO-->
   <aside class="ocultar" id="panelAside">
-
+<!-- hace falta un aria label aca, como sabe el lector de pantalla que es lo que hace este boton? -->
       <button class="cerrarPanel" id="buttonClose"><i class="fas fa-window-close"></i></button>
       <!--*************************************
                         PANEL IMG
@@ -63,6 +81,8 @@
             <h2 class="tituloSection">IMAGEN</h2>
 
                 <div>
+                  <!-- esto no es un titulo, es un label
+                  misma observacion para el resto de tus h3  -->
                     <h3 class="tituloPropiedades">URL</h3>
                     <input type="text" class="panel-control-input" id="url-img-input" aria-label="URL de imagen">
                 </div>
@@ -74,6 +94,7 @@
                 <div class="ajustesFondo">
 
                     <div class=" propiedadFondoImg panel-control-input">
+                      <!-- si no hay label ni aria label, como sabe el lector que hace este input? -->
                         <input type="color" name="" id="colorFondoDiv" value="#FFFFF">
                         <span id="nombreColorFondoDiv">#FFFFF</span>
                     </div>
@@ -185,7 +206,7 @@
           
 
         <!-- Alineacion Fuente-->
-        
+        <!-- aqui hace falta un aria label para cada boton -->
           <button class="left buttonAncho panel-control-input">
               <i class="fas fa-align-left"></i>
           </button>

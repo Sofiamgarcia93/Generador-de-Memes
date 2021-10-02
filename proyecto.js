@@ -10,6 +10,14 @@
   const body = document.querySelector('body');
 
  //EVENTO QUE CAMBIA DE MODO CLARO A MODO OSCURO
+
+//  se mas prolija con tus espacios en javascript y con el tabulado
+//  el tabulado debe ser de dos lineas dentro de tus funciones, no mas
+//  deja espacios asi, 
+//  las funciones: () => {
+// antes y despues de los parentesis del if 
+// antes y despues de las llaves 
+
   boton.addEventListener("click",()=>{
             body.classList.toggle("modoOscuro");
             body.classList.toggle("modoClaro");
@@ -21,6 +29,7 @@
         })
 
 //ELEMENTOS DE PANELES
+// aca esta mal el tabulado, hay dos espacios innecesarios
   const panel = document.getElementById("panelAside");
   const panelImg = document.getElementById("panelImg");
   const panelText = document.getElementById("panelText");
@@ -87,8 +96,10 @@ inputurl.addEventListener("change", () => {
 
 //CAMBIAR FONDO 
 const color = document.getElementById("colorFondoDiv");
+// no uses function, privilegia funciones flecha !
+// usa camelCase: cambiarColor
   function cambiarcolor( ){
- 
+//  innecesario el interpolado aca!!
    document.getElementById("colorFondoImg").style.backgroundColor =`${color.value}`;
 }
 
@@ -101,7 +112,6 @@ color.addEventListener('input', cambiarcolor)
 const spanColorFondo = document.querySelector("#nombreColorFondoDiv");
 
 color.addEventListener('input', () => {
-  
   spanColorFondo.textContent = color.value;
 });
 
