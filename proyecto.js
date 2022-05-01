@@ -75,6 +75,7 @@ descarga.addEventListener("click", () =>{
 //************************************* */
 
 //CAMBIAR IMAGEN CON URL
+///
 
 const imagenMeme = document.querySelector("#colorFondoImg");
 const inputurl = document.querySelector("#url-img-input");
@@ -86,6 +87,7 @@ inputurl.addEventListener("change", () => {
 
 
 //CAMBIAR FONDO 
+///
 const color = document.getElementById("colorFondoDiv");
   function cambiarcolor( ){
  
