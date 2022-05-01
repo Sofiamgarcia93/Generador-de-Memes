@@ -10,7 +10,7 @@
 
 ### El proyecto:
 
-En este proyecto realice un editor para generar memes. Esta es una aplicación con la que podrás manipular el texto y la imagen de tu meme. Esto es posible gracias a la inclusion de JavaScript en el mismo, para modificar dinámicamente su contenido y sus propiedades. Cuando quedes lo modifiques a tu gusto, podrás descargar tu meme para usarlo o compartilo donde quieras.
+En este proyecto realice un editor para generar memes. Esta es una aplicación con la que podrás manipular el texto y la imagen de tu meme. Esto es posible gracias a la inclusion de JavaScript en el mismo, para modificar dinámicamente su contenido y sus propiedades. Cuando lo modifiques a tu gusto, podrás descargar tu meme para usarlo o compartilo donde quieras.
 
 <img src="https://media0.giphy.com/media/gLREPOkkRAGGCGNKbZ/giphy.gif?cid=ecf05e47eq5v1f29yzieccr39ruwx8dsgi2ijmrk0fbih3pu&rid=giphy.gif&ct=s" whidth = "100%">
 
@@ -31,9 +31,10 @@ Por ultimo tenemos el boton de _Descargar Meme_ el cual nos bajar el meme genera
 ## Construido con 🛠️
 
 <ul>
-<li>HTML<li>
-<li>CSS<li>
-<li>JavaScript<li>
+
+<li>HTML</li>
+<li>CSS</li>
+<li>JavaScript</li>
 </ul>
 
 ## Autores ✒️
