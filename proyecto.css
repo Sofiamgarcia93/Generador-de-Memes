@@ -38,6 +38,7 @@ body {
 }
 
 main {
+  /* no dejes codigo comentado en una entrega */
   /*background-color: var(--colorFondo);
   min-height: 100vh;
   padding: 20px;*/
@@ -78,8 +79,11 @@ h1 {
 }
 
 .sinContorno {
+  /* Nunca te importas esta tipografia. Yo no la veo en tu pagina porque no la tengo en mi pc. 
+  Siempre importa las tipografias! */
   font-family: "Sintony", sans-serif;
   border: 0;
+  /* nunca, nunca, nunca uses outline none a menos que tengas una alternativa */
   outline: none;
   padding: 0 10px 0 10px;
   margin: 5px;
@@ -219,11 +223,13 @@ ESTILOS DEL PANEL IMAGEN
 
 .ajustesFondo {
   display: flex;
+  /* innecesario, viene por defecto */
   flex-direction: row;
   width: 100%;
   border: 0;
   font-family: var(--generalFont);
   background-color: transparent;
+  /* nooo :(  */
   outline: 0;
 }
 
@@ -325,6 +331,7 @@ ESTILOS DEL PANEL TEXTO
 .alineacionYTamanioFuente {
   width: 100%;
   display: flex;
+  /* innecesario */
   flex-direction: row;
   margin-top: 5px;
 }
