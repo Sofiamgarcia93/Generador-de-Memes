@@ -4,7 +4,7 @@
 <img src="/image.jpg" width="100%">
 <img src="https://media0.giphy.com/media/gLREPOkkRAGGCGNKbZ/giphy.gif?cid=ecf05e47eq5v1f29yzieccr39ruwx8dsgi2ijmrk0fbih3pu&rid=giphy.gif&ct=s" whidth = "100%">
 
-## <a href="https://generadordememesgarciasofia.netlify.app/"> Link del Buscador </a>
+## <a href="https://generadordememesgarciasofia.netlify.app/"> Link hacia el Generador de Memes </a>
 
 ---
 
@@ -30,9 +30,11 @@ Por ultimo tenemos el boton de _Descargar Meme_ el cual nos bajar el meme genera
 
 ## Construido con 🛠️
 
+<ul>
 <li>HTML<li>
 <li>CSS<li>
 <li>JavaScript<li>
+</ul>
 
 ## Autores ✒️
 
