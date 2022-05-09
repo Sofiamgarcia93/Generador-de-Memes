@@ -1,10 +1,11 @@
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/*VARIABLES MODO CALRO Y MODO OSCURO*/
+
 body.modoClaro {
   --colorFondo: rgb(178, 181, 185);
   --color: rgb(204, 196, 196);
@@ -38,9 +39,6 @@ body {
 }
 
 main {
-  /*background-color: var(--colorFondo);
-  min-height: 100vh;
-  padding: 20px;*/
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -80,7 +78,6 @@ h1 {
 .sinContorno {
   font-family: "Sintony", sans-serif;
   border: 0;
-  outline: none;
   padding: 0 10px 0 10px;
   margin: 5px;
   height: 30px;
@@ -219,12 +216,10 @@ ESTILOS DEL PANEL IMAGEN
 
 .ajustesFondo {
   display: flex;
-  flex-direction: row;
   width: 100%;
   border: 0;
   font-family: var(--generalFont);
   background-color: transparent;
-  outline: 0;
 }
 
 .propiedadFondoImg {
@@ -325,7 +320,6 @@ ESTILOS DEL PANEL TEXTO
 .alineacionYTamanioFuente {
   width: 100%;
   display: flex;
-  flex-direction: row;
   margin-top: 5px;
 }
 
@@ -376,7 +370,6 @@ ESTILOS DEL PANEL TEXTO
 
 .inputColorYFondo {
   display: flex;
-  flex-direction: row;
   width: 100%;
 }
 
@@ -397,7 +390,6 @@ ESTILOS DEL PANEL TEXTO
 .buttonContorno {
   width: 100%;
   display: flex;
-  flex-direction: row;
 }
 
 .ninguno {

@@ -1,50 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editor de memes</title>
-    <link rel="icon" type="image/png" href="/avellanda.png"/>
-    
-
+    <link rel="favicon.ico" type="image/png" href="./avellanda.png"/>
     <link
     rel="stylesheet"
     href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
     integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
     crossorigin="anonymous"/>
-    
     <link rel="stylesheet" href="./proyecto.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Qwitcher+Grypen:wght@400;700&family=Sintony:wght@400;700&family=Waterfall&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js" integrity="sha512-01CJ9/g7e8cUmY0DFTMcUw/ikS799FHiOA0eyHsUWfOetgbx/t6oV4otQ5zXKQyIrQGTHSmRVPIgrgLcZi/WMA==" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js" integrity="sha512-Qlv6VSKh1gDKGoJbnyA5RMXYcvnpIqhO++MhIM2fStMcGT9i2T//tSwYFlcyoRRDcDZ+TYHpH8azBBCyhpSeqw==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js" integrity="sha512-Qlv6VSKh1gDKGoJbnyA5RMXYcvnpIqhO++MhIM2fStMcGT9i2T//tSwYFlcyoRRDcDZ+TYHpH8azBBCyhpSeqw==" crossorigin="anonymous"></script>
 </head>
-<!-- el body tiene una clase para hacer cambio a claro y oscuro-->
+
 <body class="modoClaro">
     <header>
 
       <h1>Generador de Memes</h1>
 
         <div class="botonsContainer">
-            <button class="sinContorno" id="button-img"><i class="fas fa-file-image"></i><span>Imagen</span></button>
-            <button class="sinContorno" id="button-text"><i class="fas fa-font"></i><span>Texto</span></button>
-            <button class="sinContorno" id="boton"><i class="far fa-lightbulb"></i><span id="textInfo">Modo claro</span></button>
+            <button class="sinContorno" id="button-img">
+              <i class="fas fa-file-image"></i>
+              <span>Imagen</span>
+            </button>
+            <button class="sinContorno" id="button-text">
+              <i class="fas fa-font"></i>
+              <span>Texto</span>
+            </button>
+            <button class="sinContorno" id="boton">
+              <i class="far fa-lightbulb"></i>
+              <span id="textInfo">Modo claro</span>
+            </button>
         </div>
-
    </header>
-
    <main>
 
     <div class="recuadroMeme">
 
       <p class="meme-text top">Top Text</p>
-      <div  class = "meme-img" id ="colorFondoImg"> 
+      <div  aria-label="imagen" class = "meme-img" id ="colorFondoImg"> 
       
       </div>
       <p class="meme-text bottom">Bottom Text</p>
 
     </div>
 
-    <button class="botonDescargar"><i class="fas fa-download"></i>Descargar meme</button>
+    <button aria-label="boton-descargar" class="botonDescargar"><i class="fas fa-download"></i>Descargar meme</button>
 
   </main>
 
@@ -52,7 +59,7 @@
   <!--ASIDE PANEL OCULTO-->
   <aside class="ocultar" id="panelAside">
 
-      <button class="cerrarPanel" id="buttonClose"><i class="fas fa-window-close"></i></button>
+      <button aria-label="Cierre" class="cerrarPanel" id="buttonClose"><i class="fas fa-window-close"></i></button>
       <!--*************************************
                         PANEL IMG
 
@@ -63,7 +70,7 @@
             <h2 class="tituloSection">IMAGEN</h2>
 
                 <div>
-                    <h3 class="tituloPropiedades">URL</h3>
+                    <label class="tituloPropiedades">URL</label>
                     <input type="text" class="panel-control-input" id="url-img-input" aria-label="URL de imagen">
                 </div>
 
@@ -148,16 +155,14 @@
         <div class="contenedorPanelDeTexto">
           <h2 class="tituloSection">TEXTO</h2>
 
-          <h3 class="tituloPropiedades">SUPERIOR</h3>
-
-
+          <label class="tituloPropiedades">SUPERIOR</label>
           <textarea  name="" id="topText" minlength="1" maxlength="50" class="panel-control-input inputTextMeme">TOP TEXT</textarea>
           <div class="check">
               <input type="checkbox" name="" id="checkTopTex">
               <label class="little" for="topText">Sin texto superior</label>
           </div>
           
-          <h3 class="tituloPropiedades">INFERIOR</h3>
+          <label class="tituloPropiedades">INFERIOR</label>
 
           <textarea name="" id="bottomText" minlength="1" maxlength="50" class="panel-control-input inputTextMeme">BOTTOM TEXT</textarea>
           <div>
@@ -165,7 +170,7 @@
               <label class="little"  for="bottomText">Sin texto inferior</label>
           </div>
     
-          <h3 class="tituloPropiedades">FUENTE</h3>
+          <label class="tituloPropiedades">FUENTE</label>
 
           <select name="" id="selectTipografias" class="familiaFuente panel-control-input">
               <option value="'Impact'">Impact</option>
@@ -179,20 +184,17 @@
               <option value="'Times New Roman'">Times New Roman</option>
           </select>
     
-
+ <!-- Alineacion Fuente-->
+        
           <div class="alineacionYTamanioFuente">
               <input type="number" name="tamanioFuente" id="tamanioFuente" class="panel-control-input " min="10" max="40" value="16">
-          
-
-        <!-- Alineacion Fuente-->
-        
-          <button class="left buttonAncho panel-control-input">
+          <button  aria-label="boton-alineacion-izquierda" class="left buttonAncho panel-control-input">
               <i class="fas fa-align-left"></i>
           </button>
-          <button class="center panel-control-input buttonAncho">
+          <button aria-label="boton-alineacion-centrado" class="center panel-control-input buttonAncho">
               <i class="fas fa-align-center"></i>
           </button>
-          <button class="right panel-control-input buttonAncho">
+          <button aria-label="boton-alineacion-derecha" class="right panel-control-input buttonAncho">
               <i class="fas fa-align-right"></i>
           </button>
           </div>
@@ -201,7 +203,7 @@
               <!-- Color de Texto-->
         <div class="inputColorYFondo">
             <div class="colorTextoYFondo">
-                    <h3 class="tituloPropiedades">COLOR</h3>
+                    <label class="tituloPropiedades">COLOR</label>
                     <div class="panel-control-input paddi">
                         <input type="color" name="colorDeTexto" id="colorDeTexto"  value="#000000">
                         <span id="refSpanTexto">#000000</span>
@@ -212,7 +214,7 @@
 
           <div class="colorTextoYFondo">  
 
-            <h3 class="tituloPropiedades">FONDO</h3>
+            <label class="tituloPropiedades">FONDO</label>
             <div class="panel-control-input paddi">
                 <input type="color" name="colorDeFondo" id="colorDeFondo" value="#FFFFFF">
                 <span id="refSpanFondo">#FFFFFF</span>
@@ -244,14 +246,14 @@
     <!-- Espaciado-->
 
     <div class="espaciado">
-      <h3 class="tituloPropiedades">ESPACIADO</h3>
+      <label class="tituloPropiedades">ESPACIADO</label>
       <input type="number" name="" id="espaciado" max="40" min="10" value="10" class="panel-control-input anchoEspaciadoInterlineado">
     </div>
 
   <!-- Interlineado-->
 
     <div class="interlineado">
-          <h3 class="tituloPropiedades">INTERLINEADO</h3>
+          <label class="tituloPropiedades">INTERLINEADO</label>
           <select name="" id="interlineado" class="panel-control-input anchoEspaciadoInterlineado">
               <option value="0.8">0.8</option>
               <option value="1">1</option>
